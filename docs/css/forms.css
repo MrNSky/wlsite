@@ -19,6 +19,7 @@
 }
 
 .form-block input[type=text] {
+    font-family: "Montserrat", arial;
     width: 500px;
     height: 50px;
     padding: 12px 20px;
@@ -29,6 +30,7 @@
 }
 
 .form-block input[type=password] {
+    font-family: "Montserrat", arial;
     width: 500px;
     height: 50px;
     padding: 12px 20px;
@@ -39,6 +41,7 @@
 }
 
 .form-block input[type=date] {
+    font-family: "Montserrat", arial;
     width: 500px;
     height: 50px;
     padding: 12px 20px;
