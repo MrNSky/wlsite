@@ -1,0 +1,197 @@
+@media screen and (max-width: 575px) {
+    @import "url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap";
+
+    .site-container {
+        margin: 0 auto;
+        max-width: 575px;
+        padding: 0 25px 0 25px;
+        overflow: hidden;
+    }
+
+    body {
+        font-size: 12px;
+        font-family: "Montserrat", serif;  
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        width: 100%;
+    }
+
+    .contacts {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .header ul li, .rw-line, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .heroscreen h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .heroscreen p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        padding: 0 5px 0 5px;
+        min-width: 180px;
+        margin-right: 5px;
+    }
+
+    .is {
+        padding: 10px;
+    }
+
+    .big-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+        
+    }
+
+    .big-box {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        min-width: 400px;
+    }
+
+    .big-desc {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .about-desc {
+       flex-basis: 100%;
+    }
+
+    .closecredit {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex: 1;
+    }
+
+
+    .big-block-dep {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .big-box-dep h3 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .big-box2 p {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .personal-jurist {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .okb {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .okb-box {
+        flex-basis: 100%;
+        width: 100%;
+        flex: 1;
+        margin: 30px 0 20px 0 !important;
+    }
+
+    .okb-box-fc {
+        padding: 0 !important;
+        margin: 15px !important;
+    }
+
+    .okb-box-fc h3 {
+        font-size: 20px !important;
+    }
+    
+    .okb-price {
+        font-size: 26px;
+    }
+
+    .wb-line {
+        display: flex;
+        flex-direction: column !important;
+        flex: 1;
+    }
+
+    .wlb-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rw-buttons {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .rw-cont {
+        padding-top: 10px !important;
+    }
+
+    .rw-bg {
+        height: 300px !important;
+        margin: 0;
+        padding: 0 !important;
+    }
+
+    .rw-buttons a {
+        margin: 10px;
+    }
+
+    footer {
+        padding-top: 30px;
+        margin-top: 20px !important;
+    }
+
+    .footer h4 {
+        margin-bottom: 15px;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column !important;
+        padding: 30px 30px 50px 30px !important;
+        
+    }
+
+    .requisites {
+        margin-bottom: 30px;
+    }
+
+    .bank-numbers {
+        margin-bottom: 30px;
+    }
+
+    .materials {
+        margin-bottom: 30px;
+    }
+
+
+
+}
