@@ -64,7 +64,7 @@
                     </nav>
                 </div>
             </div>
-        
+        <a class="button red-button" href="signin.html"><i class="login-icon"></i>Личный Кабинет</a>
     </div>
   
 
@@ -75,39 +75,33 @@
         <div class="section" id="about">
        
         <div class="about">
-            <div class="about-pic"></div>
+            
             <div class="form-block">
-                <h1>Восстановление</h1>
+                <h1>Поиск по предложениям</h1>
                 <form class="authform" action="#" method="POST" name="recoverypass">
                     
                     <div>
-                        <p>Ваш ID или номер телефона</p>
-                        <input type="text" pattern="^[ 0-9]+$" required tabindex="1" name="username" autofocus placeholder="Напр. 508 или +79001234567"> 
+                        <p>Серия и номер паспорта (без пробела)</p>
+                        <input type="text" pattern="^[ 0-9]+$" required tabindex="1" name="username" autofocus placeholder="Напр. 1234098765"> 
+                    </div>
+                    <div>
+                        <p>Дата рождения</p>
+                        <input type="date" pattern="^[ 0-9]+$" required tabindex="2" name="birthday" autofocus placeholder="Напр. 12.05.2015" value="2015-05-15"> 
+                        
                     </div>
                     
                     <div class="frmbtn">
-                        <label><a href="signin.html">Войти в личный кабинет</a></label>
-                        <button class="button red-button" type="submit" tabindex="3" value="Восстановить"><i class="login-icon"></i>Восстановить</button>
+                        <button class="button red-button" type="submit" tabindex="3" value="Найти моё предложение"><i class="login-icon"></i>Найти моё предложение</button>
                     </div>
                 </form>
-                <div class="frm-info">
-                    <p>Данные для входа будут продублированы в SMS по телефону совпадающем с телефоном указанным в профиле аккаунта. </p>
-                    <br/>
-                    <p>Если Вы не помните ID или номер телефона напишите нам на почту <a href="mailto:support@winlevel.ru?subject=Восстановление%20доступа к личному кабинету">support@winlevel.ru</a>
-                        в письме укажите ФИО, номер телефона указанный при регистрации, серию и номер паспорта. </p>
-                    </div>
+                
             </div>
+
+            <div class="about-pic"></div>
         </div>
     </div>
 
-    <div class="section">
-        <div class="title">
-        <p>Для взаимодействия с компанией требуется наличие личного кабинета.</p>
-        <p>Регистрация бесплатна.</p>
-        <br/>
-        <a class="button red-button margin-left" href="signup.html"><i class="login-icon"></i> Зарегистрироваться</a>
-        </div>
-    </div>
+   
 
 
 
