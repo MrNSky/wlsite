@@ -72,47 +72,38 @@
 
    
 
-        <div class="section">
+        
        
-        <div class="row-block">
+        <div class="about">
             
             <div class="form-block">
                 <h1>Поиск по предложениям</h1>
-                <form class="authform" action="#" method="POST" name="recoverypass">
+                <form class="checkmyoffer" action="#" method="POST" name="checkmyoffer">
                     
                     <div>
                         <p>Серия и номер паспорта (без пробела)</p>
-                        <input type="text" pattern="^[ 0-9]+$" required tabindex="1" name="username" autofocus placeholder="Напр. 1234098765"> 
+                        <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{1,10}" required tabindex="1" name="username" autofocus placeholder="Напр. 1234098765"> 
                     </div>
                     <div>
                         <p>Дата рождения</p>
-                        <input type="date" pattern="^[ 0-9]+$" required tabindex="2" name="birthday" autofocus> 
-                        
+                        <input type="date" required tabindex="2" name="birthday"> 
                     </div>
                     
                     <div class="frmbtn">
                         <button class="button red-button" type="submit" tabindex="3" value="Найти моё предложение"><i class="login-icon"></i>Найти моё предложение</button>
                     </div>
-                </form>
-                
+                </form> 
             </div>
 
-            <div>
-                <div class="badge yellow_badge">Что это?</div>
+            <div class="content-block">
+                <div class="yellow_badge">Что это?</div>
                 <p>ПОЛУЧИТЕ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ ПО ВЫКУПУ СО СКИДКОЙ В 50-70% ОТ ОБЩЕЙ ЗАДОЛЖЕННОСТИ.</p><br>
                 <p>В 2017-м году наш сервис (Reestr GROUP) впервые запустил поиск по базе предложений по выкупу просроченной задолженности за 35-50% от общей суммы задолженности в нашем реестре. Это помогло многим клиентам быстро найти свой долг и выкупить его с огромной скидкой. Но в целом, сервис оказался сырым и узкоспециализированным. </p><br>
                 <p>Спустя 3 года мы возобновляем работу поиска предложений и на этот раз при поддержке наших партнеров из МФО, Банков и Коллекторских компаний, это значительно увеличит шансы найти своё предложение.</p><br>
                 <p>Заполните форму и получите Ваше персональное предложение по выкупу просроченной задолженности.  </p><br>
             </div>
         </div>
-    </div>
-
-   
-
-
-
-
-
+    
 
 </div>
 

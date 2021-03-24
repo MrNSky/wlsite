@@ -158,8 +158,6 @@ a {
     padding-left: 15px;
 }
 
-
-
 .section {
     margin-top: 70px;
 }
@@ -249,10 +247,15 @@ a {
 
 .about {
     display: flex;
-    align-items: center;
     flex: 1;
-    margin: 10px;
+    margin: 50px 0px;
 }
+
+.content-block {
+    margin: 15px;
+    padding: 15px;
+}
+
 
 .about-pic {
     width: 477px;
