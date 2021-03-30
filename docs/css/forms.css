@@ -60,9 +60,6 @@ input[type=text], input[type=tel], [type=password], input[type=date] {
     border-radius: 6px;
 }
 
-
-
-
 input[type=checkbox] {
     display: inline-flex;
     align-items: center;
@@ -72,6 +69,7 @@ input[type=checkbox] {
     background-position: center center;
     background-size: 50% 50%;
     background-repeat: no-repeat;
+    border-color: #fff;
     width: 1.8em;
     height: 1.8em;
 }
