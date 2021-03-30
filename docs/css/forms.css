@@ -42,9 +42,12 @@ input:focus:required:invalid {
 }
 
 .form-block form {
-    margin: 50px 10px 30px 0px;
+    margin: 30px 10px 30px 0px;
     display: flex;
     flex-direction: column;
+    background-color: #f3f3f3;
+    padding: 30px 20px;
+    border-radius: 8px;
 }
 
 input[type=text], input[type=tel], [type=password], input[type=date] {
