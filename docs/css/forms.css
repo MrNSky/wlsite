@@ -37,6 +37,7 @@ input:focus:required:invalid {
 
 
 .form-block {
+    width: 50%;
     line-height: 1.8;
 }
 
@@ -75,7 +76,6 @@ label {
     flex-direction: column;
     justify-content: flex-end;
     text-align: left;
-    margin-left: 120px;
 }
 
 .forminline {
