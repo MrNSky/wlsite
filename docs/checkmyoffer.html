@@ -68,13 +68,15 @@
     </div>
   
 
-
+    <div class="section title">
+        <h2>Поиск по предложениям</h2>
+        <div class="line"></div>
+        <span class="desc">Заполните форму и получите Ваше персональное предложение по выкупу просроченной задолженности.</span>
+    </div>
     <div class="about">
-            
         <div class="form-block">
-                <h1>Поиск по предложениям</h1>
-                <form action="#" method="POST" name="checkmyoffer">
-                    <div class="forminline">
+            <form action="#" method="POST" name="checkmyoffer">
+                <div class="forminline">
                     <div style="margin-right: 10px;">
                         <p>Серия паспорта</p>
                         <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{1,4}" required tabindex="1" name="passportpart" autofocus placeholder="Напр. 1234" maxlength="4">
@@ -84,26 +86,46 @@
                         <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{1,6}" required tabindex="2" name="passportnumber" placeholder="Напр. 098765" maxlength="6">
                     </div>
                 </div>
-                    <div>
-                        <p>Дата рождения</p>
-                        <input type="date" required tabindex="3" name="birthday"> 
-                    </div>
-                    
-                    <div class="frmbtn">
-                        <button class="button red-button" type="submit" tabindex="4" value="Найти моё предложение"><i class="login-icon"></i>Найти моё предложение</button>
-                    </div>
-                </form> 
+                <div>
+                    <p>Дата рождения</p>
+                    <input type="date" required tabindex="3" name="birthday">
+                    <input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности."> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label>
+                </div>
+                <div class="frmbtn">
+                    <button class="button red-button" type="submit" tabindex="4" value="Найти моё предложение"><i class="login-icon"></i>Найти моё предложение</button>
+                </div>
+            </form> 
         </div>
 
         <div class="content-block">
-                <div class="yellow_badge">Что это?</div>
-                <p>ПОЛУЧИТЕ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ ПО ВЫКУПУ СО СКИДКОЙ В 50-70% ОТ ОБЩЕЙ ЗАДОЛЖЕННОСТИ.</p><br>
-                <p>В 2017-м году наш сервис (Reestr GROUP) впервые запустил поиск по базе предложений по выкупу просроченной задолженности за 35-50% от общей суммы задолженности в нашем реестре. Это помогло многим клиентам быстро найти свой долг и выкупить его с огромной скидкой. Но в целом, сервис оказался сырым и узкоспециализированным. </p><br>
-                <p>Спустя 3 года мы возобновляем работу поиска предложений и на этот раз при поддержке наших партнеров из МФО, Банков и Коллекторских компаний, это значительно увеличит шансы найти своё предложение.</p><br>
-                <p>Заполните форму и получите Ваше персональное предложение по выкупу просроченной задолженности.  </p><br>
+            <div class="yellow_badge">Что это?</div>
+            <p>ПОЛУЧИТЕ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ ПО ВЫКУПУ ЗАДОЛЖЕННОСТИ СО СКИДКОЙ В 50-70%.</p><br>
+            <p>В 2017-м году наш сервис (Reestr GROUP) впервые запустил поиск по базе предложений по выкупу просроченной задолженности за 35-50% от общей суммы задолженности в нашем реестре. Это помогло многим клиентам быстро найти свой долг и выкупить его с огромной скидкой. Но в целом, сервис оказался сырым и узкоспециализированным. </p><br>
+            <p>Спустя 3 года мы возобновляем работу поиска предложений и на этот раз при поддержке наших партнеров из МФО, Банков и Коллекторских компаний, это значительно увеличит шансы найти своё предложение.</p><br>
         </div>
     </div>
     
+    <div class="section" id="benefits">
+    <div>
+        <div class="wb-line">
+            <div class="wlb-box">
+                <div class="money-icon"></div>
+                <div class="wlb-title"><h4>Защищённое соединение</h4></div>
+                <p>Ресурс работает по защищённому протоколу SSL, все данные передаются в зашифрованном виде.</p>
+            </div>
+            <div  class="wlb-box">
+                <div class="dchecked-icon"></div>
+                <div class="wlb-title"><h4>Политика Конфиденциальности</h4></div>
+                <p>Ваша приватность регулируется политикой конфиденциальности компании. </p>
+            </div>
+            <div class="wlb-box">
+                <div class="distant-icon"></div>
+                <div class="wlb-title"><h4>Соблюдение законодательства</h4></div>
+                <p>Полученные Вами предложения действуют в рамках Законодательства Российской Федерации.</p>
+            </div>
+        </div>
+        </div>
+    </div>
 
 </div>
 
