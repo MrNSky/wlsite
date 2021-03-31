@@ -214,3 +214,30 @@
     background-repeat: no-repeat;
     margin-right: 10px;
 }
+
+.checklook {
+    background: url(../img/icons/checklook.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+.checkget {
+    background: url(../img/icons/checkget.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
+
+.checkaccess {
+    background: url(../img/icons/checkaccess.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+}
