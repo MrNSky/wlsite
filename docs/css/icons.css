@@ -187,3 +187,30 @@
     background-repeat: no-repeat;
     margin-right: 10px;
 }
+
+.check-ssl {
+    background: url(../img/icons/ssl.svg);
+    background-size: 140px;
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.check-privacy {
+    background: url(../img/icons/privacy.svg);
+    background-size: 140px;
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.check-justice {
+    background: url(../img/icons/justice.svg);
+    background-size: 140px;
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
