@@ -88,7 +88,7 @@
                 <div>
                     <p>Дата рождения</p>
                     <input type="date" required tabindex="3" name="birthday">
-                    <div style="display: inline-flex;"><input type="checkbox" name="privacypolicy" max="31-12-2017" min="01-01-1910" validate value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
+                    <div style="display: inline-flex;"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
                 </div>
                 <div class="frmbtn">
                     <button class="button red-button" type="submit" tabindex="4" value="Найти моё предложение"><i class="login-icon"></i>Найти моё предложение</button>
@@ -117,6 +117,9 @@
             </div>
         </div>
     </div>
+
+    <a class="button red-button" href="#offersuccess">Пример удачного запроса</a><br>
+    <a class="button red-button" href="#offerfailure">Пример неудачного запроса</a>
   
     <div class="section" id="benefits">
     <div>
@@ -197,6 +200,47 @@
         </div>
     </div>
     
+
+
+
+    <div class="popup" id="offersuccess">
+        <a href="##" class="popup-area"></a>
+        <div class="popup-body">
+            
+            <div class="popup-content">
+                <div class="popup-icon">
+                    <img style="width: 50px;" alt="Успешно" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTUwNC41MDIsNzUuNDk2Yy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTgtMzYuMjA0LDBMMTYxLjU5NCwzODIuMjAzTDQzLjcwMiwyNjQuMzExYy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTctMzYuMjA0LDAgICAgYy05Ljk5OCw5Ljk5Ny05Ljk5OCwyNi4yMDUsMCwzNi4yMDNsMTM1Ljk5NCwxMzUuOTkyYzkuOTk0LDkuOTk3LDI2LjIxNCw5Ljk5LDM2LjIwNCwwTDUwNC41MDIsMTExLjcgICAgQzUxNC41LDEwMS43MDMsNTE0LjQ5OSw4NS40OTQsNTA0LjUwMiw3NS40OTZ6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" />
+                </div>	
+                <!--<a href="##" class="popup-close">Закрыть X</a>-->
+                <h3>Успешно!</h3>
+                <h4>У нас имеется для Вас коммерческое предложение.</h4>
+                <div class="offerblock">
+                    <div class="offer-position">
+                        <div class="offer">
+                            <p>Найдена задолженность в размере.*</p>
+                            <h3>100 000₽</h3>
+                        </div>
+                        <div class="offer">
+                            <p>Уступка в рамках программы «Закрой Кредит»</p>
+                            <h3>30 000₽</h3>
+                        </div>
+                        <div class="offer">
+                            <p>Сумма платежа в рассрочку.**</p>
+                            <h3>2 500₽</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+<br>
+                <a class="button red-button" href="##">Я подумаю. Закрыть окно.</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 

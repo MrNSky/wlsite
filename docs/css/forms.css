@@ -140,3 +140,24 @@ label {
     display: inline-flex;
     width: 100%;
 }
+
+.offerblock {
+    margin: 20px 0 20px 0;
+}
+
+.offer-position {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    padding: 20px;
+
+}
+
+.offer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
