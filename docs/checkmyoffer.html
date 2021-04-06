@@ -49,7 +49,7 @@
 
         <div class="navigation">
             <div class="brandname">
-                <div class="logo"><a href="/"></a></div>
+                <div class="logo"><a href="index.html"></a></div>
                 <div class="companyname">Win Level Capital</div>
                 <div>
                     <nav>
@@ -75,26 +75,22 @@
     <div class="about">
         <div class="form-block">
             <form action="#" method="POST" name="checkmyoffer">
-                <div>
-                    <p>Ваш мобильный телефон </p>
-                    <input type="tel" pattern="(\+?\d[- .]*){1,11}" required tabindex="1" name="username" autofocus placeholder="Напр. +79001234567"> 
-                </div>
                 <div class="forminline">
                     <div style="margin-right: 10px;">
                         <p>Серия паспорта</p>
-                        <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{1,4}" required tabindex="1" name="passportpart" placeholder="Напр. 1234" maxlength="4">
+                        <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{4,4}" required tabindex="1" name="passportpart" placeholder="Напр. 1234" maxlength="4">
                     </div>
                     <div style="width: 100%;">
                         <p>Номер паспорта</p>
-                        <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{1,6}" required tabindex="2" name="passportnumber" placeholder="Напр. 098765" maxlength="6">
+                        <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{6,6}" required tabindex="2" name="passportnumber" placeholder="Напр. 098765" maxlength="6">
                     </div>
                 </div>
                 <div>
                     <p>Дата рождения</p>
-                    <input type="date" required tabindex="3" name="birthday">
+                    <input type="date" required tabindex="3" name="birthday" pattern="[0-9]{8,8}">
                     <div style="display: inline-flex;"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
                 </div>
-                <h6>Номер телефона небудет использован в маркетинговых целях.</h6>
+                
                 <div class="frmbtn">
                     <button class="button red-button" type="submit" tabindex="4" value="Найти моё предложение"><i class="login-icon"></i>Найти моё предложение</button>
                 </div>
@@ -256,7 +252,7 @@
         <div class="content-block">
             <div class="yellow_badge">Что это?</div>
             <p>С 2017 года поиск по базе предложений для выкупа просроченной задолженности помог многим быстро найти и выкупить свою задолженность за 35-50% от общей суммы.</p>
-            <p>Мы доработали и возобновили работу поиска предложений и на этот раз при поддержке наших партнеров из МФО, Банков и Коллекторских компаний, что значительно увеличивает шансы найти своё предложение. </p></br></br></br>
+            <p>Мы доработали и возобновили работу поиска предложений и на этот раз при поддержке наших партнеров из МФО, Банков и Коллекторских компаний, что значительно увеличивает шансы найти своё предложение. </p></br>
             <p>Всего 3 шага для получения персонального предложения: </p>
             <div class="facts">
                 <div class="is">

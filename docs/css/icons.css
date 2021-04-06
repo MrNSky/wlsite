@@ -241,3 +241,11 @@
     height: 30px;
     padding-right: 5px;
 }
+
+.okb-logo {
+    background: url(../img/icons/okb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+}
