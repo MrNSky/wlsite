@@ -30,6 +30,7 @@ body {
 
 .absolute-center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -49,7 +50,6 @@ a {
 .site-container {
     margin: 0 auto;
     max-width: 1200px;
-    box-sizing: inherit;
 }
 
 .header {
@@ -100,8 +100,11 @@ a {
 
 .navigation {
     display: flex;
+    flex: 1;
+    width: 100%;
     justify-content: space-between;
     margin-top: 20px;
+    padding: 0;
 }
 
 .landing-menu {
@@ -125,9 +128,10 @@ a {
 
 .landing-menu > li > a:after {
     color: #C7141A;
-    display: block;
+    display: flex;
 	width: 0;
 	height: 2px;
+    margin-top: 4px;
 	background-color: #C7141A;
 	content: "";
 	transition: width 0.3s ease-out;
@@ -145,6 +149,7 @@ a {
     justify-content: space-between;
 
 }
+
 
 .pa-desc {
     padding-top: 15px;
@@ -173,6 +178,7 @@ a {
 
 .icon-smile-text {
     padding-left: 15px;
+    line-height: 1.8;
 }
 
 .section {
@@ -203,7 +209,7 @@ a {
 }
 
 .big-box {
-    width: 33.3%;
+    flex: 1;
     padding: 15px;
 }
 
@@ -252,6 +258,7 @@ a {
     font-style: 13px;
     margin-bottom: 30px;
     padding: 0 20px 0 20px;
+    line-height: 1.5;
 }
 
 .line {
@@ -282,39 +289,17 @@ a {
     margin: 15px;
 }
 
-.signup-pic {
-    width: 500px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-image: url(../img/zkman-reg.svg);
-    margin: 15px;
-}
-
-.signin-pic {
-    width: 600px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-image: url(../img/zkman-signin.svg);
-    margin: 15px;
-}
-
-.recovery-pic {
-    width: 500px;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-image: url(../img/zkman-recovery.svg);
-    margin: 15px;
-}
-
 .about-desc {
     flex: 1;
-    margin: 15px;
+    margin: 15px 0;
     line-height: 1.8;
 }
 
 .about-desc p {
     margin-top: 10px;
     margin-bottom: 15px;
+    text-align: justify;
+    line-height: 1.8;
 }
 
 .closecredit {
@@ -413,22 +398,33 @@ a {
     flex: 1;
     box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    padding: 20px 20px 20px 20px;
-    margin: 15px;
+    padding: 20px;
+    margin: 15px 15px;
 }
+
+.small-box:first-child {
+    margin: 15px 0;
+}
+
+.small-box:last-child {
+    margin: 15px 0;
+}
+
 
 .okb {
     display: flex;
+    flex: 1;
     align-items: center;
     align-content: center;
 }
 
 .okb-box-fc {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     background-color: none;
     background: none;
-    margin: 20px 20px 20px 0;
-    padding: 20px;
+    padding: 35px;
 }
 
 .okb-box {
@@ -458,10 +454,6 @@ a {
 
 .okb-box-fc p {
     padding: 5px 10px 10px 5px ;
-}
-
-.okb-box-fc h3 {
-    font-size: 30px;
 }
 
 .okb-title h3 {

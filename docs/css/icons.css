@@ -249,3 +249,27 @@
     width: 150px;
     height: 150px;
 }
+
+.signup-pic {
+    width: 500px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image: url(../img/zkman-reg.svg);
+    margin: 15px;
+}
+
+.signin-pic {
+    width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-image: url(../img/zkman-signin.svg);
+    margin: 15px;
+}
+
+.recovery-pic {
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-image: url(../img/zkman-recovery.svg);
+    margin: 15px;
+}
