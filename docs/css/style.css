@@ -1,3 +1,4 @@
+@import "url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap";
 @import "reset.css"; 
 @import "fonts.css";
 @import "buttons.css";
@@ -16,9 +17,14 @@
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Montserrat', -apple-system;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap);
+}
+
 body {
+    font-family: 'Montserrat', serif;
     background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     overflow-y: auto;
     overflow-x: hidden;
