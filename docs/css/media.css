@@ -34,7 +34,7 @@
             justify-content: center;
         }
     
-        .header ul li, .rw-line, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
+        .header ul li, .recovery-pic, .signin-pic, .signup-pic, .rw-line, .okb-logo, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
             display: none;
             visibility: hidden;
             position: absolute;
@@ -114,6 +114,22 @@
 
         .about {
             margin: 0 !important;
+            width: 100%;
+        }
+
+        .form-block { 
+            width: 100% !important;
+        }
+
+        .frm-info {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .frmbtn {
+            display: flex;
+            flex-direction: column;
         }
     
         .about-desc {
@@ -191,15 +207,12 @@
             flex-direction: column;
             align-items: center;
             align-content: center;
+            padding: 15px;
+            margin-top: 50px;
         }
         
         .okb-box-fc {
             display: flex;
-            flex-direction: row !important;
-            background-color: none;
-            background: none;
-            padding: 50px 0px !important;
-            font-size: 30px;
         }
         
         .okb-box {
@@ -213,23 +226,6 @@
             border-radius: 8px;
             padding: 0px;
         }
-        
-        .okb-box:first-child {
-            margin: 20px 20px 20px 0px;
-        }
-        
-        .okb-box:last-child {
-            margin: 20px 0 20px 30px;
-        }
-        
-        .okb-box-fc p:first-child {
-            padding: 20px 10px 10px 5px ;
-        }
-        
-        .okb-box-fc p {
-            padding: 5px 10px 10px 5px ;
-        }
-        
         
         .okb-title h3 {
             color: #C7141A
