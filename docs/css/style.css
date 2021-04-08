@@ -277,8 +277,9 @@ a {
 }
 
 .content-block {
-    width: 50%;
+    flex: 1;
     margin: 5px 15px;
+    text-align: justify;
 }
 
 
