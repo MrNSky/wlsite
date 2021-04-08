@@ -76,7 +76,7 @@
     border-radius: 50%;
     background: #82ce34;
 	text-align: center;
-    font-family: "Montserrat", serif;
+    font-family: 'Montserrat';
     color: white;
     font-size: 60px;
 }
@@ -94,7 +94,7 @@
     border-radius: 50%;
     background: #FF543E;
 	text-align: center;
-    font-family: "Montserrat", serif;
+    font-family: 'Montserrat';
     color: white;
     font-size: 60px;
 }
