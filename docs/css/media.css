@@ -3,10 +3,12 @@ and (min-width: 360px)
 and (max-width: 767px)
 and (orientation: portrait)
 {
+
         body {
             width: 100%;
             font-size: 10px;
             font-family: "Montserrat", serif;
+            font-display: swap;
         }
     
         .site-container {
@@ -19,6 +21,7 @@ and (orientation: portrait)
             justify-content: center;
             text-align: center;
             font-family: "Montserrat", serif;
+            font-display: swap;
             font-size: 18px;
             font-weight: 800;
             width: 100%;
@@ -73,14 +76,16 @@ and (orientation: portrait)
             justify-content: center !important;
             align-content: center !important;
             align-items: center !important;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat';
+            font-display: swap;
             height: 45px;
             padding: 0px 20px 5px 20px;
             margin: 10px 5px;
         }
 
         .yellow-button {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat';
+            font-display: swap;
             font-weight: 400;
             border-radius: 4px;
             box-shadow: 0px 5px 11px rgba(255, 210, 0, 0.5);
