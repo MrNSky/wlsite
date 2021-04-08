@@ -251,6 +251,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .desc {
@@ -545,6 +546,8 @@ footer {
 }
 
 .footer {
+    display: flex;
+    flex: 1;
     width: 100%;
     margin: 0 auto;
     max-width: 1140px;
@@ -560,6 +563,7 @@ footer {
 
 .information {
     display: flex;
+    flex: 1;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -582,8 +586,7 @@ footer {
 
 .bn-link {
     display: inline-flex;
-    align-items: center;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
 }
 
 .materials {
