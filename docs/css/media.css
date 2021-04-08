@@ -112,6 +112,8 @@ and (orientation: portrait)
         }
 
         .about {
+            display: flex;
+            flex-direction: column;
             margin: 0 !important;
             width: 100%;
         }
