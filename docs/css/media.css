@@ -68,7 +68,7 @@ and (orientation: portrait)
             padding: 5px;
         }
 
-        .is:last-child {
+        .mobcolumn {
             display: flex;
             flex-direction: column;
         }
