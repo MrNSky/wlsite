@@ -32,7 +32,7 @@ and (max-width: 767px)
             justify-content: center;
         }
     
-        .header ul li, .recovery-pic, .signin-pic, .signup-pic, .rw-line, .okb-logo, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
+        .header ul li, .recovery-pic, .popup-close, .signin-pic, .signup-pic, .rw-line, .okb-logo, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
             display: none;
             visibility: hidden;
             position: absolute;
@@ -303,6 +303,26 @@ and (max-width: 767px)
         .materials {
             margin-bottom: 30px;
         }
+
+        .popup-content {
+            background-color: #fff;
+            color: black;
+            min-width: 90% !important;
+            min-height: 90% !important;
+            max-height: 90% !important;
+            max-width: 90% !important;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .popup {
+            position: absolute !important;
+            width: 100%;
+            height: 100%;
+        }
+
 
 }
 
