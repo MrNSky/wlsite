@@ -369,6 +369,8 @@ a {
 }
 
 .zk-list {
+    display: flex;
+    justify-content: center;
     margin: 20px;
     line-height: 1.8;
 }

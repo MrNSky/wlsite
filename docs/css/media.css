@@ -5,7 +5,7 @@ and (max-width: 767px)
 
         body {
             width: 100%;
-            font-size: 10px;
+            font-size: 12px !important;
             font-family: "Montserrat", serif;
             font-display: swap;
         }
@@ -21,7 +21,7 @@ and (max-width: 767px)
             text-align: center;
             font-family: "Montserrat", serif;
             font-display: swap;
-            font-size: 18px;
+            font-size: 18px !important;
             font-weight: 800;
             width: 100%;
         }
@@ -32,12 +32,12 @@ and (max-width: 767px)
             justify-content: center;
         }
     
-        .header ul li, .recovery-pic, .popup-close, .signin-pic, .signup-pic, .rw-line, .okb-logo, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
-            display: none;
-            visibility: hidden;
-            position: absolute;
-            opacity: 0;
-            z-index: -1000;
+        .header ul li, .yellow_badge, .recovery-pic, .popup-close, .signin-pic, .signup-pic, .rw-line, .okb-logo, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
+            display: none !important;
+            visibility: hidden !important;
+            position: absolute !important;
+            opacity: 0 !important;
+            z-index: -1000 !important;
         }
 
         .heroscreen {
@@ -82,6 +82,7 @@ and (max-width: 767px)
         }
 
         .button {
+            font-family: 'Montserrat';
             display: flex;
             justify-content: center !important;
             align-content: center !important;
@@ -89,10 +90,10 @@ and (max-width: 767px)
             font-family: 'Montserrat';
             font-display: swap;
             height: 45px;
-            padding: 0px 20px 5px 20px;
+            padding: 5px 20px 5px 20px;
             margin: 10px 5px;
-            font-size: 13px;
-            font-weight: 400;
+            font-size: 14px !important;
+            font-weight: 500 !important;
         }
 
         .yellow-button {
@@ -164,14 +165,13 @@ and (max-width: 767px)
             padding: 25px 25px !important;
         }
 
-        .zk-product li {
-            margin: 0 0 !important;
-            padding: 0px 0px !important;
+        .zk-product>ul>li {
+            padding: 20px 20px !important;
+
         }
 
         .zk-list {
-            margin: 0px !important;
-            line-height: 1.8;
+            margin: 30px !important;
         }
 
 
