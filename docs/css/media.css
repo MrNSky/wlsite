@@ -73,8 +73,8 @@ and (max-width: 767px)
         }
 
         .fullwidth {
-            min-width: 210px;
-            max-width: 70%;
+            min-width: 210px !important;
+            max-width: 100% !important;
         }
 
         h2 {
@@ -82,7 +82,6 @@ and (max-width: 767px)
         }
 
         .button {
-            font-family: 'Montserrat';
             display: flex;
             justify-content: center !important;
             align-content: center !important;
@@ -94,17 +93,6 @@ and (max-width: 767px)
             margin: 10px 5px;
             font-size: 14px !important;
             font-weight: 500 !important;
-        }
-
-        .yellow-button {
-            font-family: 'Montserrat';
-            font-display: swap;
-            font-weight: 400;
-            border-radius: 4px;
-            box-shadow: 0px 5px 11px rgba(255, 210, 0, 0.5);
-            color: black;
-            font-size: 13px;
-            background: #ffd200;
         }
 
         .big-block {
