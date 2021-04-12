@@ -110,7 +110,7 @@ a {
 
 .landing-menu {
     display: flex;
-    list-style: square outside
+    list-style: square outside;
 }
 
 .landing-menu li {
@@ -307,40 +307,28 @@ a {
 .closecredit {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
 
 .zk-product:first-child {
-    display: flex;
-    align-content: flex-start;
     align-items: flex-start;
     background: none;
-    border: none;
     box-shadow: none;
     flex: 1;
-    margin: 10px 10px 10px 0;
-    padding: 30px;
+    margin: 0px 10px 10px 0px;
+    padding: 0px 20px 20px 0px;
     border-radius: 8px;
-}
-
-.zk-product:first-child a {
-    margin-top: 0;
-}
-
-.zk-product:first-child h3 {
-    margin-left: 10px;
+    text-align: justify;
 }
 
 .zk-product {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     flex: 1;
     background: #ffd200;
     box-shadow: 0px 10px 25px 2px rgba(255, 210, 0, 0.5);
-    margin: 10px;
-    padding: 30px;
+    margin: 20px 10px;
+    padding: 50px 25px;
     border-radius: 8px;
 }
 
@@ -352,8 +340,7 @@ a {
     background: white;
     border: none;
     box-shadow: 0px 10px 25px 2px rgba(0, 0, 0, 0.05);
-    margin: 10px 0 10px 10px;
-    padding: 30px;
+    padding: 50px 25px;
     border-radius: 8px;
 }
 
@@ -376,15 +363,19 @@ a {
 
 .zk-desc {
     margin: 15px;
-    line-height: 1.8;
+    line-height: 1.5;
     font-style: italic;
+    text-align: justify;
 }
 
 .zk-list {
-    margin: 30px;
+    margin: 20px;
     line-height: 1.8;
 }
 
+.zk-list>ul>li {
+    list-style: square outside;
+}
 
 .personal-jurist {
     display: flex;

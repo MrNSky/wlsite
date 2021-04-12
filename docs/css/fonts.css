@@ -135,8 +135,15 @@ p {
 }
 
 .jp-title {
+    display: flex;
+    justify-content: center;
     margin: 20px;
     color: #094049;
+}
+
+.jp-title>h3 {
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .wlb-title {
