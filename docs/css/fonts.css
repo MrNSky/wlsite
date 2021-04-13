@@ -82,7 +82,7 @@
 
 
 h1 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial;
     font-display: swap;
     font-size: 40px;
     font-weight: 800;
@@ -90,7 +90,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial;
     font-display: swap;
     font-size: 36px;
     font-weight: 800;
@@ -99,7 +99,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial;
     font-display: swap;
     font-size: 24px;
     font-weight: 900;
@@ -107,7 +107,7 @@ h3 {
     line-height: 1.2;
 }
 h4 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial;
     font-display: swap;
     font-size: 16px;
     font-weight: 800;
@@ -115,13 +115,13 @@ h4 {
 }
 
 h5 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial;
     font-display: swap;
     font-size: 12px;
 }
 
 h6 {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial;
     font-display: swap;
     font-size: 10px;
 }

@@ -19,7 +19,7 @@
 
 
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', Arial;
     background-color: #fff;
     font-size: 13px;
     overflow-y: auto;
@@ -618,6 +618,10 @@ footer {
 
 .footer-line a {
     color: black;
+}
+
+.rub {
+    content: "\20BD";
 }
 
 

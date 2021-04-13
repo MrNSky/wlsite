@@ -6,7 +6,7 @@ and (max-width: 767px)
         body {
             width: 100%;
             font-size: 12px !important;
-            font-family: "Montserrat", serif;
+            font-family: "Montserrat", Arial;
             font-display: swap;
         }
     
@@ -19,7 +19,7 @@ and (max-width: 767px)
             display: flex;
             justify-content: center;
             text-align: center;
-            font-family: "Montserrat", serif;
+            font-family: "Montserrat", Arial;
             font-display: swap;
             font-size: 18px !important;
             font-weight: 800;
@@ -86,7 +86,7 @@ and (max-width: 767px)
             justify-content: center !important;
             align-content: center !important;
             align-items: center !important;
-            font-family: 'Montserrat';
+            font-family: 'Montserrat', Arial;
             font-display: swap;
             height: 45px;
             padding: 5px 20px 5px 20px;
