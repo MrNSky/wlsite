@@ -17,6 +17,11 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="resource-type" content="Homepage"/>
     <meta name="robots" content="index,follow"/>
+    <script type="text/javascript">
+    if ( $('[type="date"]').prop('type') != 'date' ) {
+    $('[type="date"]').datepicker();
+}
+    </script>
 </head>
 
 <body>
@@ -86,7 +91,7 @@
                 </div>
                 <div>
                     <p>Дата рождения</p>
-                    <input type="date" required tabindex="3" name="birthday" pattern="[0-9]{8,8}">
+                    <input type="date" required tabindex="3" name="birthday" pattern="[0-9]{8,8}" max="2005-01-01" min="1910-01-01">
                     <div style="display: inline-flex;"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
                 </div>
                 
@@ -96,37 +101,7 @@
 
 
 
-    <!---------Модальное окно с безуспешным запросом------------->
-    <div class="popup" id="offerfailure">
-        <a href="##" class="popup-area"></a>
-        <div class="popup-body">
-            
-            <div class="popup-content">
-                <div class="popup-icon-failure">
-                    <img style="width: 50px;" alt="Нет предложений" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMS45OTkgNTExLjk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTUwNi4xNzUsMzY1LjU3NmMtNC4wOTUtMTAuMjU4LTE1LjcyOS0xNS4yNTUtMjUuOTg3LTExLjE2Yy0xMC4yNTgsNC4wOTUtMTUuMjU1LDE1LjcyOS0xMS4xNiwyNS45ODcgICAgIGM1LjIwNiwxMy4wNDMsMy40OTksMjcuOTM1LTQuNTY3LDM5LjgzOWMtOC4wNywxMS45MS0yMC45OTEsMTguNzQxLTM1LjQ0OSwxOC43NDFIODMuMDY4Yy0xNS43NzEsMC0yOS43NzYtOC4yMjktMzcuNDY1LTIyLjAxNSAgICAgYy03LjcwMS0xMy44MDktNy4zMzktMzAuMDgyLDAuOTY4LTQzLjUzM0wyMTkuNTQzLDkzLjM4MmM3Ljg3Ni0xMi43NTIsMjEuNTE5LTIwLjM2NSwzNi40OTctMjAuMzY1ICAgICBjMTQuOTc4LDAsMjguNjIsNy42MTMsMzYuNDk3LDIwLjM2NWwxMjcuOTI3LDIwNy4xMjRjNS44MDQsOS4zOTcsMTguMTI4LDEyLjMxMiwyNy41MjMsNi41MDUgICAgIGM5LjM5Ni01LjgwMywxMi4zMS0xOC4xMjYsNi41MDUtMjcuNTIzTDMyNi41NjQsNzIuMzY0Yy0xNS4yMTYtMjQuNjM2LTQxLjU4LTM5LjM0NC03MC41MjUtMzkuMzQ0cy01NS4zMDksMTQuNzA5LTcwLjUyNSwzOS4zNDQgICAgIEwxMi41NDIsMzUyLjQxOGMtMTYuMDM2LDI1Ljk2Ni0xNi43MzQsNTcuMzgtMS44NjksODQuMDMzYzE0Ljg1MywyNi42Myw0MS45MTYsNDIuNTI4LDcyLjM5NSw0Mi41MjhoMzQ1Ljk0NCAgICAgYzI3LjkzOCwwLDUyLjkyNy0xMy4yMzMsNjguNTYtMzYuMzAzQzUxMy4wODgsNDE5Ljc3OCw1MTYuMzAzLDM5MC45NTUsNTA2LjE3NSwzNjUuNTc2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjU2LjA0OSwzOTkuOTg3YzExLjA0NSwwLDE5Ljk5OC04Ljk1MywxOS45OTgtMTkuOTk4YzAtMTEuMDQ1LTguOTUzLTE5Ljk5OC0xOS45OTgtMTkuOTk4aC0wLjAxICAgICBjLTExLjA0NSwwLTE5Ljk5Myw4Ljk1My0xOS45OTMsMTkuOTk4QzIzNi4wNDYsMzkxLjAzNCwyNDUuMDA0LDM5OS45ODcsMjU2LjA0OSwzOTkuOTg3eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjc2LjAzOCwzMDkuOTk1VjE2My4wMDhjMC0xMS4wNDUtOC45NTMtMTkuOTk4LTE5Ljk5OC0xOS45OThjLTExLjA0NSwwLTE5Ljk5OCw4Ljk1My0xOS45OTgsMTkuOTk4djE0Ni45ODcgICAgIGMwLDExLjA0NSw4Ljk1MywxOS45OTgsMTkuOTk4LDE5Ljk5OEMyNjcuMDg1LDMyOS45OTMsMjc2LjAzOCwzMjEuMDQsMjc2LjAzOCwzMDkuOTk1eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCTwvZz4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
-                </div>	
-                <!--<a href="##" class="popup-close">Закрыть X</a>-->
-                <h3>Сожалеем!</h3>
-                <h4>по введёным данным нет предложений</h4>
-                <div class="offerblock">
-                    <div class="offer-position">
-                        <div class="offer">
-                            <p>К сожалению, на текущий момент у нас нет для Вас предложений по уступке кредитных обязательств со скидкой до 70%. Попробуйте проверить правильность введённых данных и сделать новый запрос.</p>
-                            
-                        </div>
-                    </div><br>
-                    <p>Мы сохранили Ваши персональные данные и позвоним с номера горячей линии как только найдём какие-либо совпадения в будущем. <br><br>Пожалуйста, сохраните номер нашей горячей линии <a class="telnumber" href="tel://88005502014" title="Бесплатный звонок">8 (800) 550 2014</a> и оставайтесь на связи.</p>
-                </div>
-
-               
-
-                <div class="inline absolute-center">
-                <a class="button red-button" href="##">Закрыть</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!---------Конец модальное окно с безуспешным запросом------------->
+    
 
 
     <!---------Модальное окно с отправкой заявки в CRM------------->
@@ -164,7 +139,7 @@
         </div>
 
         <div class="content-block">
-            <div class="yellow_badge">Что это?</div>
+            <div class="badge yellow_badge">Что это?</div>
             <p>С 2017 года поиск по базе предложений для выкупа просроченной задолженности помог многим быстро найти и выкупить свою задолженность за 35-50% от общей суммы.</p>
             <p>Мы доработали и возобновили работу поиска предложений и на этот раз при поддержке наших партнеров из МФО, Банков и Коллекторских компаний, что значительно увеличивает шансы найти своё предложение. </p></br>
             <p>Всего 3 шага для получения персонального предложения: </p>
@@ -291,7 +266,7 @@
                         </div>
                         <div>
                             <p>Введите номер мобильного телефона</p>
-                            <input type="tel" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7 (___) ___-__-__">
+                            <input type="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7 (___) ___-__-__">
                         </div>
                         <div class="frmbtn">
                             <button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button>
@@ -313,6 +288,45 @@
 </div>
 <!----------Конец модального окна с успешным запросом------------->
 
+<!---------Модальное окно с безуспешным запросом------------->
+<div class="popup" id="offerfailure">
+    <a href="##" class="popup-area"></a>
+    <div class="popup-body">
+        <div class="popup-content">
+            <div class="popup-icon-failure">
+                <img style="width: 50px;" alt="Нет предложений" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMS45OTkgNTExLjk5OSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTUwNi4xNzUsMzY1LjU3NmMtNC4wOTUtMTAuMjU4LTE1LjcyOS0xNS4yNTUtMjUuOTg3LTExLjE2Yy0xMC4yNTgsNC4wOTUtMTUuMjU1LDE1LjcyOS0xMS4xNiwyNS45ODcgICAgIGM1LjIwNiwxMy4wNDMsMy40OTksMjcuOTM1LTQuNTY3LDM5LjgzOWMtOC4wNywxMS45MS0yMC45OTEsMTguNzQxLTM1LjQ0OSwxOC43NDFIODMuMDY4Yy0xNS43NzEsMC0yOS43NzYtOC4yMjktMzcuNDY1LTIyLjAxNSAgICAgYy03LjcwMS0xMy44MDktNy4zMzktMzAuMDgyLDAuOTY4LTQzLjUzM0wyMTkuNTQzLDkzLjM4MmM3Ljg3Ni0xMi43NTIsMjEuNTE5LTIwLjM2NSwzNi40OTctMjAuMzY1ICAgICBjMTQuOTc4LDAsMjguNjIsNy42MTMsMzYuNDk3LDIwLjM2NWwxMjcuOTI3LDIwNy4xMjRjNS44MDQsOS4zOTcsMTguMTI4LDEyLjMxMiwyNy41MjMsNi41MDUgICAgIGM5LjM5Ni01LjgwMywxMi4zMS0xOC4xMjYsNi41MDUtMjcuNTIzTDMyNi41NjQsNzIuMzY0Yy0xNS4yMTYtMjQuNjM2LTQxLjU4LTM5LjM0NC03MC41MjUtMzkuMzQ0cy01NS4zMDksMTQuNzA5LTcwLjUyNSwzOS4zNDQgICAgIEwxMi41NDIsMzUyLjQxOGMtMTYuMDM2LDI1Ljk2Ni0xNi43MzQsNTcuMzgtMS44NjksODQuMDMzYzE0Ljg1MywyNi42Myw0MS45MTYsNDIuNTI4LDcyLjM5NSw0Mi41MjhoMzQ1Ljk0NCAgICAgYzI3LjkzOCwwLDUyLjkyNy0xMy4yMzMsNjguNTYtMzYuMzAzQzUxMy4wODgsNDE5Ljc3OCw1MTYuMzAzLDM5MC45NTUsNTA2LjE3NSwzNjUuNTc2eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjU2LjA0OSwzOTkuOTg3YzExLjA0NSwwLDE5Ljk5OC04Ljk1MywxOS45OTgtMTkuOTk4YzAtMTEuMDQ1LTguOTUzLTE5Ljk5OC0xOS45OTgtMTkuOTk4aC0wLjAxICAgICBjLTExLjA0NSwwLTE5Ljk5Myw4Ljk1My0xOS45OTMsMTkuOTk4QzIzNi4wNDYsMzkxLjAzNCwyNDUuMDA0LDM5OS45ODcsMjU2LjA0OSwzOTkuOTg3eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCQk8cGF0aCBkPSJNMjc2LjAzOCwzMDkuOTk1VjE2My4wMDhjMC0xMS4wNDUtOC45NTMtMTkuOTk4LTE5Ljk5OC0xOS45OThjLTExLjA0NSwwLTE5Ljk5OCw4Ljk1My0xOS45OTgsMTkuOTk4djE0Ni45ODcgICAgIGMwLDExLjA0NSw4Ljk1MywxOS45OTgsMTkuOTk4LDE5Ljk5OEMyNjcuMDg1LDMyOS45OTMsMjc2LjAzOCwzMjEuMDQsMjc2LjAzOCwzMDkuOTk1eiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJCTwvZz4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+            </div>	
+            <!--<a href="##" class="popup-close">Закрыть X</a>-->
+            <h3>Сожалеем!</h3>
+            <h4>Мы не нашли доступных Вам предложений.</h4>
+            <div class="offerblock">
+                 <div class="offer-position">
+                   
+                    <div class="offer">
+                        
+                        <form action="#" name="offersuccess" method="POST">
+                            <div>
+                                <p>К сожалению, на текущий момент у нас нет для Вас предложений по уступке кредитных обязательств со скидкой до 65%. Оставьте заявку в форме ниже, наши сотрудники свяжутся с Вами в течение 24 часов и проведут консультацию о том, как получить дисконт до 65% от суммы долга. </p><br> 
+                            </div>
+                            <div>
+                                <p>Ваше Имя</p>
+                                <input type="text" pattern="^[А-Яа-яЁё\s]+$" minlength="3">
+                            </div>
+                            <div>
+                                <p>Введите номер мобильного телефона</p>
+                                <input type="tel" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7 (___) ___-__-__">
+                            </div>
+                            <div class="frmbtn">
+                                <button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Конец модальное окно с безуспешным запросом------------->
     
 </body>
 

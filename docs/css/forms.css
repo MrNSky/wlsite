@@ -37,7 +37,7 @@ input:focus:required:invalid {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; // Yeah, yeah everybody write about it
+    -webkit-appearance: none; 
 }
 
 input[type='number'],
