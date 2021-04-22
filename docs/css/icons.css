@@ -188,6 +188,15 @@
     margin-right: 10px;
 }
 
+.zen {
+    background: url(../img/icons/zen-new-icon.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
 .check-ssl {
     background: url(../img/icons/ssl.svg);
     background-size: 140px;
