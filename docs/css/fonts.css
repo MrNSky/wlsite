@@ -149,3 +149,11 @@ p {
 .wlb-title {
     margin: 20px 0 20px 0;
 }
+
+.red-symbols {
+    font-family: 'Montserrat', Arial;
+    font-display: swap;
+    font-size: 45px;
+    color: red;
+    font-weight: 600;
+}
