@@ -282,3 +282,24 @@
     background-image: url(../img/zkman-recovery.svg);
     margin: 15px;
 }
+
+.staruser-icon {
+    background: url(../img/icons/userstar.svg) no-repeat;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+.emblem-icon {
+    background: url(../img/icons/emblem.svg) no-repeat;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+.userprotect-icon {
+    background: url(../img/icons/userprotect.svg) no-repeat;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}

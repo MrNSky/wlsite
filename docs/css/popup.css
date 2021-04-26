@@ -72,15 +72,15 @@
 .popup-icon {
     display: flex;
     justify-content: center;
+    flex: 1;
+    padding: 20px;
     width: 90px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     height: 90px;
     border-radius: 50%;
     background: #82ce34;
 	text-align: center;
-    font-family: 'Montserrat', Arial;
     color: white;
-    font-size: 60px;
 }
 
 .offerblock {
@@ -90,15 +90,15 @@
 .popup-icon-failure {
     display: flex;
     justify-content: center;
+    flex: 1;
+    padding: 20px;
     width: 90px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     height: 90px;
     border-radius: 50%;
-    background: #FF543E;
+    background: red;
 	text-align: center;
-    font-family: 'Montserrat', Arial;
     color: white;
-    font-size: 60px;
 }
 
 .offer-position {

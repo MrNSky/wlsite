@@ -14,6 +14,8 @@ and (max-width: 767px)
             padding: 0 15px !important;
         }
 
+    
+
 
         h3 {
             display: flex;
@@ -32,7 +34,7 @@ and (max-width: 767px)
             justify-content: center;
         }
     
-        .header ul li, .yellow_badge, .recovery-pic, .popup-close, .signin-pic, .signup-pic, .rw-line, .okb-logo, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .red-arrow, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .big-box2-read-more, .transp-button, .footer-logo  {
+        .header ul li, .yellow_badge, .zen, .recovery-pic, .popup-close, .signin-pic, .signup-pic, .rw-line, .okb-logo, .companyname, .footer-line, .rw-line img, .rw-line a, .l-container p, .okb-box-fc p, .hero-picture, .about-pic, .zk-product:first-child, .landing-menu li, .badge, .jp-badge, .yellow-badge, .wa, .vk, .tg, .inst, .yt, .footer-logo  {
             display: none !important;
             visibility: hidden !important;
             position: absolute !important;
@@ -114,14 +116,13 @@ and (max-width: 767px)
 
         .about {
             display: flex;
-            flex-direction: column;
-            margin: 0 !important;
-            width: 100%;
+            flex: 1;
+            flex-direction: column !important;
+            margin: 15px !important;
+            padding: 15px;
         }
 
-        .form-block { 
-            width: 100% !important;
-        }
+        
 
         .frm-info {
             display: flex;
@@ -293,6 +294,7 @@ and (max-width: 767px)
         }
 
         .popup-content {
+            width: 100%;
             background-color: #fff;
             color: black;
             min-width: 90% !important;
@@ -311,6 +313,7 @@ and (max-width: 767px)
             height: 100%;
         }
 
+       
 
 }
 
