@@ -147,7 +147,10 @@ p {
 }
 
 .wlb-title {
+    display: flex;
     margin: 20px 0 20px 0;
+    justify-content: center;
+    text-align: center;
 }
 
 .red-symbols {
