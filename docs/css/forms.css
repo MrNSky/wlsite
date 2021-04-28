@@ -49,7 +49,7 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
-input[type=text], input[type=tel], [type=password], input[type=date], input[type=number] {
+input[type=text], input[type=tel], [type=password], input[type=date], input[type=number] input[type=email] {
     width: 90%;
     font-family: "Montserrat", arial;
     height: 30px;
