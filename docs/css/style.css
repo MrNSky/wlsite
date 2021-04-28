@@ -37,7 +37,6 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 10px 0;
 }
 
 img {
@@ -115,8 +114,7 @@ a {
 }
 
 .landing-menu li {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0 30px;
 }
 
 .landing-menu li::marker {
@@ -288,10 +286,14 @@ a {
 
 
 .form-block {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     background-color: #f3f3f3;
-    padding: 30px;
     border-radius: 8px;
-    margin: 0px 20px;
+    padding: 30px;
+    margin-right: 20px;
 }
 
 .about-pic {

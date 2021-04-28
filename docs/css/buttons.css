@@ -6,7 +6,7 @@
     font-family: 'Montserrat', Arial;
     height: 45px;
     padding: 0 20px;
-    margin: 20px 5px;
+    margin: 10px 5px;
     font-size: 13px;
     font-weight: 500;
 }
@@ -49,6 +49,7 @@
 }
 
 .jp-button {
+    border: none;
     background: #094049;
     box-shadow: 0px 5px 11px rgba(9, 64, 73, 0.5);
     border-radius: 4px;

@@ -101,17 +101,21 @@
                 <div>
                     <p>Введите дату рождения в указанном формате</p>
                     <input id="date" type="text" required tabindex="3" name="birthday" placeholder="ДД.ММ.ГГГГ" maxlength="8">
-                    <div class="absolute-center"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
+                    <div class="inline">
+                        <input class="tm-link" type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required>
+                        <p>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</p>
+                    </div>
+                </div>
+                <div class="absolute-center">
+                    <button class="button red-button" type="submit" tabindex="4" value="Найти моё предложение">Найти моё предложение</button>
                 </div>
                 
-                
-                    <button class="button red-button absolute-center" type="submit" tabindex="4" value="Найти моё предложение">Найти моё предложение</button>
+                   
                 
             </form> 
         </div>
 
         <div class="about-desc">
-            <div class="badge yellow_badge">Что это?</div>
             <p>С 2017 года поиск по базе предложений для выкупа просроченной задолженности помог многим быстро найти и выкупить свою задолженность за 35-50% от общей суммы.</p>
             <p>Мы доработали и возобновили работу поиска предложений. и на этот раз при поддержке наших партнеров из МФО, Банков и Коллекторских компаний, что значительно увеличивает шансы найти своё предложение. </p><br>
             <p>Всего 3 шага для получения персонального предложения: </p>
@@ -237,14 +241,13 @@
                     <form action="#" name="offersuccess" method="POST" >
                         <div>
                             <p>Ваше Имя</p>
-                            <input type="text" pattern="^[А-Яа-яЁё\s]+$" minlength="3">
+                            <input class="inputfullwidth" type="text" pattern="^[А-Яа-яЁё\s]+$" minlength="3">
                         </div>
                         <div>
                             <p>Номер мобильного телефона</p>
-                            <input id="phone" type="tel" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7(9**)***-**_**">
+                            <input id="phone" class="inputfullwidth" type="tel" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7(9**)***-**_**">
                         </div>
-                        
-                        <button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button>
+                        <div class="absolute-center"><button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button></div>
                         
                     </form>
                 </div>
@@ -285,15 +288,13 @@
                             </div>
                             <div>
                                 <p>Ваше Имя</p>
-                                <input type="text" pattern="^[А-Яа-яЁё\s]+$" minlength="3">
+                                <input type="text" class="inputfullwidth" pattern="^[А-Яа-яЁё\s]+$" minlength="3">
                             </div>
                             <div>
                                 <p>Введите номер мобильного телефона</p>
-                                <input id="phone" type="tel" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7(9**)***-**-**">
+                                <input id="phone" class="inputfullwidth" type="tel" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7(9**)***-**-**">
                             </div>
-                            <div class="frmbtn">
-                                <button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button>
-                            </div>
+                            <div class="absolute-center"><button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button></div>
                         </form>
                     </div>
                 </div>

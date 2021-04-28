@@ -49,13 +49,29 @@ input[type="number"]:focus {
     -moz-appearance: textfield;
 }
 
-input[type=text], input[type=tel], [type=password], input[type=date], input[type=number] input[type=email] {
-    width: 90%;
+input[type=text], input[type=tel], [type=password], input[type=date], input[type=number], input[type=email] {
+    border: solid;
     font-family: "Montserrat", arial;
-    height: 30px;
-    padding: 10px 20px;
-    margin: 10px 10px 20px 0;
+    line-height: 30px;
+    padding: 10px;
+    margin: 10px 0;
+    margin-right: 10px;
     border-radius: 6px;
+}
+
+.inputfullwidth {
+    width: 93%;
+}
+
+select {
+    border: 1px solid;
+    font-family: "Montserrat", arial;
+    line-height: 30px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    height: 55px;
+    width: 100%;
 }
 
 
@@ -69,6 +85,7 @@ input[type=checkbox] {
     border-color: #fff;
     width: 1.8em;
     height: 1.8em;
+    margin: 10px 10px 10px 0;
 }
 
 input[type=checkbox]::before {
@@ -114,14 +131,6 @@ input[type=checkbox]:disabled::before {
     background-color: #e9ecef;
 }
 
-label {
-    margin: 0 20px 0 20px;
-}
-
-.form-block button {
-    margin: 20px 0 20px 0px;
-}
-
 .frm-info {
     display: flex;
     flex-direction: column;
@@ -131,4 +140,5 @@ label {
 
 .forminline {
     display: flex;
+    flex-direction: row;
 }

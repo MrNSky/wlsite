@@ -251,7 +251,7 @@
     </div>
 </div>
 
-<div class="section">
+<div class="section"></div>
     <div class="title">
         <h2>Подайте заявку прямо сейчас</h2>
         <div class="line"></div>
@@ -263,13 +263,13 @@
     <div class="form-block">
         <form action="#" method="POST" name="personalJuristLead" id="personalJuristLead">
             <div class="forminline">
-                <div>
+                <div class="inputfullwidth" >
                     <p>Имя</p>
-                    <input type="text" required tabindex="1" name="firstname" placeholder="Имя">
+                    <input type="text" class="inputfullwidth" required tabindex="1" name="firstname" placeholder="Имя">
                 </div>
-                <div>
+                <div class="inputfullwidth" >
                     <p>Фамилия</p>
-                    <input type="text" required tabindex="2" name="lastname" placeholder="Фамилия">
+                    <input type="text" class="inputfullwidth"  required tabindex="2" name="lastname" placeholder="Фамилия">
                 </div>
             </div>
 
@@ -280,7 +280,14 @@
                 </div>
                 <div>
                     <p>Выберите услугу</p>
-                    <input type="text" required tabindex="4" name="changeservice" placeholder="Выберите услугу">
+                    <select name="changetservice" tabindex="3" placeholder="Выберите услугу" required>
+                        <option value="сonsultation" selected>Консультация за 499₽</option>
+                        <option value="withdrawalJudicalOrder">Отмена судебного приказа за 999₽</option>
+                        <option value="ReducedRetention">Снижение удержаний за 2499₽</option>
+                        <option value="appeal">Аппеляционная жалоба за 2999₽</option>
+                        <option value="vozrazhenieIsk">Возражение на исковое заявление за 2999₽</option>
+                        <option value="CreditVacation">Кредитные Каникулы за 999₽</option>
+                    </select>
                 </div>
             </div>
 
@@ -295,10 +302,8 @@
                 </div>
                 
             </div>
-            <div class="absolute-center"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
-            
-            
-                <button class="button jp-button" type="submit" tabindex="7" value="Заказать обратный звонок">Заказать обратный звонок</button>
+            <div class="inline"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
+            <div class="absolute-center"><button class="button jp-button" type="submit" value="Заказать обратный звонок">Заказать обратный звонок</button></div>
             
         </form> 
     </div>
