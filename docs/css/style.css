@@ -288,10 +288,11 @@ a {
 
 
 .form-block {
+    width: 40%;
     background-color: #f3f3f3;
-    flex: 1;
     padding: 30px;
     border-radius: 8px;
+    margin: 0px 20px;
 }
 
 .about-pic {
@@ -687,3 +688,6 @@ footer {
     font-size: 50px;
 }
 
+.about-picture {
+    width: 30%;
+}

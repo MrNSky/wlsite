@@ -161,3 +161,10 @@ p {
     font-weight: 700;
     margin-right: 20px;
 }
+
+.oldprice {
+    color: #aaa;
+    margin: 20px 30px;
+    text-decoration: 2px line-through;
+	text-decoration-color: red;
+}
