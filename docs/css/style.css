@@ -27,7 +27,8 @@ body {
 }
 
 .inline {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     align-content: center;
 }
