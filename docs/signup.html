@@ -80,41 +80,34 @@
             <a class="button red-button" href="signin.html"><i class="login-icon"></i>Войти в кабинет</a>
     </div>
   
-
-    
-
-   
-
         <div class="section" id="about">
-       
         <div class="about">
             <div class="signup-pic"></div>
-            <div class="form-block">
+            <div class="about-desc form-block">
                 <h2>Регистрация</h2>
-                <form class="registerform" action="#" method="POST" name="signup">
+                <form class="registerform leadform" action="#" method="POST" name="signup">
                     
-                    <div>
-                        <p>Ваш мобильный телефон</p>
-                        <input type="tel" pattern="(\+?\d[- .]*){2,11}" required tabindex="1" name="username" autofocus minlength="10" maxlength="12" placeholder="Напр. 89001234567"> 
+                    <div class="fullbox">
+                        <label for="phone">Ваш мобильный телефон</label>
+                        <input class="field" id="phone" type="tel" pattern="(\+?\d[- .]*){2,11}" required tabindex="1" name="username" autofocus minlength="10" maxlength="12" placeholder="+7(9**)***-**-**"> 
                     </div>
-                    <div>
-                        <p>Идентификатор Агента (ID Пригласителя)</p>
-                        <input type="text" required tabindex="2" name="agentid" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{2,8}" minlength="2" maxlength="8"placeholder="Напр. 508"> 
+                    <div class="fullbox">
+                        <label for="agentid">Идентификатор Агента (ID Пригласителя)</label>
+                        <input id="agentid" class="field" type="text" required tabindex="2" name="agentid" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{2,8}" minlength="2" maxlength="8" placeholder="Напр. 508"> 
                     </div>
-                    <div class="frmbtn">
-                        
+                    <div class="inline">
                         <button class="button red-button" type="submit" tabindex="3" value="Зарегистрироваться"><i class="login-icon"></i>Зарегистрироваться</button>
-                        <label><a href="signin.html">Войти в личный кабинет</a></label>
+                        <p><a href="signin.html">Войти в личный кабинет</a></p>
                     </div>
                 </form>
                 <div class="frm-info">
-                <p>Вход в Ваш личный кабинет будет произведён мгновенно.</p>
-                <p>Данные для входа мы направим в SMS на указанный номер телефона.</p>
-                <br>
-                <p>После входа для корректной работы кабинета: </p>
-                <p>1. Запомните Ваш ID (Идентификационный номер) </p>
-                <p>2. Подтвердите номер телефона в профиле. </p>
-                <p>3. Заполните профиль. </p>
+                <p>Вход в Ваш личный кабинет будет произведён мгновенно.<br>
+                Данные для входа мы направим в SMS на указанный номер телефона.</p>
+                
+                <p>После входа для корректной работы кабинета: <br>
+                1. Запомните Ваш ID (Идентификационный номер) <br>
+                2. Подтвердите номер телефона в профиле. <br>
+                3. Заполните профиль. </p>
                 </div>
             </div>
         </div>

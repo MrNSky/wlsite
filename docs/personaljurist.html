@@ -37,6 +37,7 @@
             <div class="header">
                 <div>
                     <ul>
+                        <li class="tm-link"><a href="moneybox.html">Программа «Копилка»</a></li>
                     <!--<li class="tm-link"><a href="#">Правовая информация</a></li>
                     <li class="tm-link"><a href="#">Коммерческим представителям</a></li>
                     <li class="tm-link"><a href="#">Партнерам</a></li>
@@ -261,26 +262,28 @@
     </div>
 
     <div class="form-block">
-        <form action="#" method="POST" name="personalJuristLead" id="personalJuristLead">
-            <div class="forminline">
-                <div class="inputfullwidth" >
-                    <p>Имя</p>
-                    <input type="text" class="inputfullwidth" required tabindex="1" name="firstname" placeholder="Имя">
+        <form action="#" method="POST" name="personalJuristLead" class="leadform">
+            <div class="inline">
+                <div class="fullbox">
+                    <label for="firstname">Имя</label>
+                    <input type="text" class="field" id="firstname" required tabindex="1" name="firstname" placeholder="Имя">
                 </div>
-                <div class="inputfullwidth" >
-                    <p>Фамилия</p>
-                    <input type="text" class="inputfullwidth"  required tabindex="2" name="lastname" placeholder="Фамилия">
+                <div style="max-width: 2%;">&nbsp;&nbsp;&nbsp;</div>
+                <div class="fullbox">
+                    <label for="lastname">Фамилия</label>
+                    <input type="text" class="field" id="lastname" required tabindex="2" name="lastname" placeholder="Фамилия">
                 </div>
             </div>
 
-            <div class="forminline">
-                <div>
-                    <p>Отчество</p>
-                    <input type="text" required tabindex="3" name="patronymic" placeholder="Отчество">
+            <div class="inline">
+                <div class="fullbox">
+                    <label for="patronymic">Отчество</label>
+                    <input type="text" class="field" id="patronymic" required tabindex="3" name="patronymic" placeholder="Отчество">
                 </div>
-                <div>
-                    <p>Выберите услугу</p>
-                    <select name="changetservice" tabindex="3" placeholder="Выберите услугу" required>
+                <div style="width: 2%;">&nbsp;&nbsp;&nbsp;</div>
+                <div class="fullbox">
+                    <label for="changetservice">Выберите услугу</label>
+                    <select class="field" id="changetservice" name="changetservice" tabindex="3" placeholder="Выберите услугу" required>
                         <option value="сonsultation" selected>Консультация за 499₽</option>
                         <option value="withdrawalJudicalOrder">Отмена судебного приказа за 999₽</option>
                         <option value="ReducedRetention">Снижение удержаний за 2499₽</option>
@@ -291,18 +294,19 @@
                 </div>
             </div>
 
-            <div class="forminline">
-                <div>
-                    <p>Email</p>
-                    <input type="email" required tabindex="5" name="email" placeholder="myname@mail.ru">
+            <div class="inline">
+                <div class="fullbox">
+                    <label for="email">Email</label>
+                    <input type="email" class="field" required tabindex="5" id="email" name="email" placeholder="myname@mail.ru">
                 </div>
-                <div>
-                    <p>Выберите услугу</p>
-                    <input id="phone" type="tel" required minlength="11" tabindex="6" maxlength="12" autofocus placeholder="+7(9**)***-**-**"> 
+                <div style="width: 2%;">&nbsp;&nbsp;&nbsp;</div>
+                <div class="fullbox">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" class="field" type="tel" required minlength="11" tabindex="6" maxlength="12" autofocus placeholder="+7(9**)***-**-**"> 
                 </div>
                 
             </div>
-            <div class="inline"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
+            <div class="inline absolute-center"><input type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required> <label>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label></div>
             <div class="absolute-center"><button class="button jp-button" type="submit" value="Заказать обратный звонок">Заказать обратный звонок</button></div>
             
         </form> 

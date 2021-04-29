@@ -88,22 +88,20 @@
        
         <div class="about">
             <div class="signin-pic"></div>
-            <div class="form-block">
+            <div class="about-desc form-block">
                 <h2>Личный Кабинет</h2>
-                <form class="authform" action="#" method="POST" name="signin">
-                    
-                    <div>
-                        <p>Ваш ID или номер телефона</p>
-                        <input title="Введите ваш уникальный ID или номер телефона начиная с 8" type="number" pattern="[0-9]{3,11}" required tabindex="1" name="username" autofocus placeholder="Напр. 508 или 89001234567"> 
+                <form class="authform leadform" action="#" method="POST" name="signin">
+                    <div class="fullbox">
+                        <label for="username">Ваш ID или номер телефона</label>
+                        <input class="field" id="username" title="Введите ваш уникальный ID или номер телефона начиная с 8" type="number" pattern="[0-9]{3,11}" required tabindex="1" name="username" autofocus placeholder="Напр. 508 или 89001234567"> 
                     </div>
-                    <div>
-                        <p>Пароль</p>
-                        <input type="password" required tabindex="2" name="pass" placeholder="******"> 
+                    <div class="fullbox">
+                        <label for="pass">Пароль</label>
+                        <input class="field" type="password" id="pass" required tabindex="2" name="pass" placeholder="******"> 
                     </div>
-                    <div class="frmbtn">
-                        
+                    <div class="inline">
                         <button class="button red-button" type="submit" tabindex="3" value="Войти"><i class="login-icon"></i>Войти</button>
-                        <label><a href="recoverypass.html">Забыли пароль?</a></label>
+                        <p><a href="recoverypass.html">Забыли пароль?</a></p>
                     </div>
                 </form>
             </div>

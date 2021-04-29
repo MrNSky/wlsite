@@ -37,6 +37,8 @@
             <div class="header">
                 <div>
                     <ul>
+                        <li class="tm-link"><a href="moneybox.html">Программа «Копилка»</a></li>
+                    <li class="tm-link"><a href="personaljurist.html">Сервис «Личный Юрист»</a></li>
                     <!--<li class="tm-link"><a href="#">Правовая информация</a></li>
                     <li class="tm-link"><a href="#">Коммерческим представителям</a></li>
                     <li class="tm-link"><a href="#">Партнерам</a></li>
@@ -86,32 +88,30 @@
         <span class="desc">Заполните форму и получите Ваше персональное предложение по выкупу просроченной задолженности.</span>
     </div>
     <div class="about">
-        <div class="form-block">
-            <form action="#" method="POST" name="checkmyoffer">
-                <div class="forminline">
-                    <div>
-                        <p>Серия паспорта</p>
-                        <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{4,4}" required tabindex="1" name="passportpart" placeholder="Напр. 1234" maxlength="4">
+        <div class="about-desc form-block">
+            <form action="#" method="POST" name="checkmyoffer" class="leadform">
+                <div class="inline">
+                    <div class="fullbox">
+                        <label for="passportpart">Серия паспорта</label>
+                        <input type="text" class="field" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{4,4}" required tabindex="1" name="passportpart" placeholder="Напр. 1234" maxlength="4">
                     </div>
-                    <div>
-                        <p>Номер паспорта</p>
-                        <input type="text" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{6,6}" required tabindex="2" name="passportnumber" placeholder="Напр. 098765" maxlength="6">
+                    <div style="width: 2%;">&nbsp;&nbsp;&nbsp;</div>
+                    <div class="fullbox">
+                        <label for="passportnumber">Номер паспорта</label>
+                        <input type="text" class="field" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{6,6}" required tabindex="2" name="passportnumber" placeholder="Напр. 098765" maxlength="6">
                     </div>
                 </div>
-                <div>
-                    <p>Введите дату рождения в указанном формате</p>
-                    <input id="date" type="text" required tabindex="3" name="birthday" placeholder="ДД.ММ.ГГГГ" maxlength="8">
-                    <div class="inline">
-                        <input class="tm-link" type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required>
-                        <p>Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</p>
-                    </div>
+                <div class="fullbox">
+                    <label for="date">Введите дату рождения в указанном формате</label>
+                    <input id="date" class="field" type="text" required tabindex="3" name="birthday" placeholder="ДД.ММ.ГГГГ" maxlength="8">
+                </div>
+                <div class="inline">
+                    <input class="tm-link" id="terms" type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required>
+                    <label for="terms">Я принимаю условия <a href="https://drive.google.com/file/d/1KMa166udXzU268kFjsZeiEgT81bXcG0h/view" title="Ознакомиться с Политикой Конфиденциальности." target="_blank">политики конфиденциальности</a>.</label>
                 </div>
                 <div class="absolute-center">
                     <button class="button red-button" type="submit" tabindex="4" value="Найти моё предложение">Найти моё предложение</button>
                 </div>
-                
-                   
-                
             </form> 
         </div>
 
@@ -238,16 +238,20 @@
             <div class="offerblock">
                 <div class="offer-position">
                     <p>Оставьте Ваши контактные данные в форме ниже и мы свяжемся с Вами в течении 24-х часов.</p><br>
-                    <form action="#" name="offersuccess" method="POST" >
-                        <div>
-                            <p>Ваше Имя</p>
-                            <input class="inputfullwidth" type="text" pattern="^[А-Яа-яЁё\s]+$" minlength="3">
+                    <form action="#" name="offersuccess" method="POST" class="leadform">
+                        <div class="fullbox">
+
+                            <label for="firstname">Ваше Имя</label>
+                            <input class="field" type="text" id="firstname" pattern="^[А-Яа-яЁё\s]+$" minlength="3" required>
+                       
                         </div>
-                        <div>
-                            <p>Номер мобильного телефона</p>
-                            <input id="phone" class="inputfullwidth" type="tel" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7(9**)***-**_**">
+                            
+                        <div  class="fullbox">
+                            <label for="phone">Номер Телефона</label>
+                            <input width="100%" id="phone" class="field" type="tel" required tabindex="1" name="phonenumber" maxlength="12" autofocus placeholder="+7(9**)***-**_**">
                         </div>
-                        <div class="absolute-center"><button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button></div>
+                        <div class="absolute-center">
+                            <button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button></div>
                         
                     </form>
                 </div>
@@ -279,22 +283,22 @@
             <h4>Мы не нашли доступных Вам предложений.</h4>
             <div class="offerblock">
                  <div class="offer-position">
-                   
                     <div class="offer">
-                        
-                        <form action="#" name="offersuccess" method="POST">
-                            <div>
-                                <p>К сожалению, на текущий момент у нас нет для Вас предложений по уступке кредитных обязательств со скидкой до 65%. Оставьте заявку в форме ниже, наши сотрудники свяжутся с Вами в течение 24 часов и проведут консультацию о том, как получить дисконт до 65% от суммы долга. </p><br> 
+                        <form action="#" name="offersuccess" method="POST" class="leadform">
+                            <div class="fullbox">
+    
+                                <label for="firstname">Ваше Имя</label>
+                                <input class="field" type="text" id="firstname" pattern="^[А-Яа-яЁё\s]+$" minlength="3" required>
+                           
                             </div>
-                            <div>
-                                <p>Ваше Имя</p>
-                                <input type="text" class="inputfullwidth" pattern="^[А-Яа-яЁё\s]+$" minlength="3">
+                                
+                            <div  class="fullbox">
+                                <label for="phone">Номер Телефона</label>
+                                <input width="100%" id="phone" class="field" type="tel" required tabindex="1" name="phonenumber" maxlength="12" autofocus placeholder="+7(9**)***-**_**">
                             </div>
-                            <div>
-                                <p>Введите номер мобильного телефона</p>
-                                <input id="phone" class="inputfullwidth" type="tel" required tabindex="1" name="phonenumber" maxlength="12" maxlength="12" autofocus placeholder="+7(9**)***-**-**">
-                            </div>
-                            <div class="absolute-center"><button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button></div>
+                            <div class="absolute-center">
+                                <button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button></div>
+                            
                         </form>
                     </div>
                 </div>

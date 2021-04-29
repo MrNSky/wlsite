@@ -88,19 +88,18 @@
        
         <div class="about">
             <div class="recovery-pic"></div>
-            <div class="form-block">
+            <div class="about-desc form-block">
                 <h2>Восстановление</h2>
-                <form class="authform" action="#" method="POST" name="recoverypass">
+                <form class="authform leadform" action="#" method="POST" name="recoverypass">
                     
-                    <div>
-                        <p>Ваш ID или номер телефона</p>
-                        <input type="number" pattern="(\+?\d[- .]*){2,11}" required tabindex="1" name="username" autofocus placeholder="Напр. 508 или 89001234567"> 
+                    <div class="fullbox">
+                        <label for="username">Ваш ID или номер телефона</label>
+                        <input class="field" id="username" type="number" pattern="(\+?\d[- .]*){2,11}" required tabindex="1" name="username" autofocus placeholder="Напр. 508 или 89001234567"> 
                     </div>
                     
-                    <div class="frmbtn">
-                        
+                    <div class="inline">
                         <button class="button red-button" type="submit" tabindex="2" value="Восстановить"><i class="login-icon"></i>Восстановить</button>
-                        <label><a href="signin.html">Войти в личный кабинет</a></label>
+                        <p><a href="signin.html">Войти в личный кабинет</a></p>
                     </div>
                 </form>
                 <div class="frm-info">

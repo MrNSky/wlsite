@@ -26,6 +26,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .inline {
     display: flex;
     flex-direction: row;
@@ -33,8 +34,14 @@ body {
     align-content: center;
 }
 
+.fullbox {
+    box-sizing: border-box;
+    width: 100%;
+}
+
 .absolute-center {
     display: flex;
+    flex: 100%;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -287,14 +294,9 @@ a {
 
 
 .form-block {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
     background-color: #f3f3f3;
     border-radius: 8px;
     padding: 30px;
-    margin-right: 20px;
 }
 
 .about-pic {
@@ -306,8 +308,9 @@ a {
 }
 
 .about-desc {
-    flex: 1;
-    margin: 5% 0;
+    flex-shrink: 1;
+    flex: 0 0 50%;
+    margin: 10px;
     line-height: 1.8;
 }
 
