@@ -694,5 +694,7 @@ footer {
 }
 
 .about-picture {
-    width: 30%;
+    flex-shrink: 1;
+    flex: 0 0 50%;
+
 }
