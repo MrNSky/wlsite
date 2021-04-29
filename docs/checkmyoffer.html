@@ -90,7 +90,7 @@
     <div class="about">
         <div class="about-desc form-block">
             <form action="#" method="POST" name="checkmyoffer" class="leadform">
-                <div class="inline">
+                <div class="mobcolumn inline">
                     <div class="fullbox">
                         <label for="passportpart">Серия паспорта</label>
                         <input type="text" class="field" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{4,4}" required tabindex="1" name="passportpart" placeholder="Напр. 1234" maxlength="4">
@@ -101,9 +101,11 @@
                         <input type="text" class="field" onkeyup="this.value = this.value.replace(/[^\d]/g,'');" pattern="[0-9]{6,6}" required tabindex="2" name="passportnumber" placeholder="Напр. 098765" maxlength="6">
                     </div>
                 </div>
+                <div class="mobcolumn inline">
                 <div class="fullbox">
-                    <label for="date">Введите дату рождения в указанном формате</label>
+                    <label for="date">Дата рождения</label>
                     <input id="date" class="field" type="text" required tabindex="3" name="birthday" placeholder="ДД.ММ.ГГГГ" maxlength="8">
+                </div>
                 </div>
                 <div class="inline">
                     <input class="tm-link" id="terms" type="checkbox" name="privacypolicy" value="Я принимаю условия политики конфиденциальности." checked required>

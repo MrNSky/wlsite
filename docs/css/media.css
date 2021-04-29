@@ -71,6 +71,10 @@ and (max-width: 767px)
             max-width: 100% !important;
         }
 
+        .fullbox {
+            width: 90% !important;
+        }
+
         h2 {
             font-size: 27px;
         }
@@ -82,9 +86,9 @@ and (max-width: 767px)
             align-items: center !important;
             font-family: 'Montserrat', Arial;
             font-display: swap;
-            height: 45px;
-            padding: 5px 20px 5px 20px;
-            margin: 10px 5px;
+            height: 50px;
+            padding: 0px 20px 0px 20px;
+            margin: 5px;
             font-size: 12px !important;
             font-weight: 400 !important;
         }
@@ -123,12 +127,14 @@ and (max-width: 767px)
 
     
         .about-desc {
-            margin: 0 !important;
+            margin: 0px !important;
         }
 
         .form-block {
             padding: 20px !important;
         }
+
+        
 
         .closecredit {
             display: flex;
@@ -268,7 +274,6 @@ and (max-width: 767px)
             display: flex;
             flex-direction: column !important;
             padding: 30px 30px 50px 30px !important;
-            
         }
     
         .requisites {
@@ -303,21 +308,10 @@ and (max-width: 767px)
             height: 100%;
         }
 
-
-
-
-
-
-
-
         .mobcolumn {
             display: flex !important;
             flex-direction: column !important;
         }
-
-    
-
-       
 
 }
 
