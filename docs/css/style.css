@@ -47,10 +47,6 @@ body {
     align-content: center;
 }
 
-img {
-    width: 100%;
-}
-
 a {
     color: #C7141A;
     text-decoration: none;
@@ -61,12 +57,14 @@ a {
     max-width: 1200px;
 }
 
+header {
+    background-color: #f3f3f3;
+}
+
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 30px;
-    background-color: #f3f3f3;
     align-content: center;
     height: 60px;
     justify-content: space-between;
@@ -86,7 +84,7 @@ a {
 }
 
 .tm-link {
-    margin: 0 10px 0 10px;
+    margin: 0 10px 0 0;
 }
 
 .brandname {
