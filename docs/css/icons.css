@@ -1,14 +1,19 @@
 .telnumber {
     background: url('../img/icons/phone.svg');
     background-repeat: no-repeat;
-    padding-left: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
 
 .mail-icon {
     background: url('../img/icons/mail.svg');
     background-repeat: no-repeat;
-    padding-left: 20px;
-    margin-left: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
 }
 
 .logo {
@@ -144,9 +149,9 @@
 
 .wa {
     background: url(../img/icons/wa.svg);
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     margin-right: 10px;
     margin-left: 20px;
@@ -154,47 +159,46 @@
 
 .vk {
     background: url(../img/icons/vk.svg);
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
 .tg {
     background: url(../img/icons/tg.svg);
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
 .inst {
     background: url(../img/icons/inst.svg);
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
 .yt {
     background: url(../img/icons/yt.svg);
-    background-size: 30px;
-    width: 30px;
-    height: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
 .zen {
     background: url(../img/icons/zen-new-icon.svg);
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
     background-repeat: no-repeat;
-    margin-right: 10px;
 }
 
 .check-ssl {

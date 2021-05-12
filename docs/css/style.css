@@ -80,7 +80,9 @@ header {
 
 .contacts {
     display: flex;
+    flex-direction: row;
     align-items: center;
+    align-content: center;
 }
 
 .tm-link {
@@ -695,4 +697,11 @@ footer {
     flex-shrink: 1;
     flex: 0 0 50%;
 
+}
+
+.vertical-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
 }
