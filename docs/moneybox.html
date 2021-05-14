@@ -101,7 +101,7 @@
                 <p>Участникам программы «Закрой Кредит» мы рекомендуем накапливать денежные средства, это позволит быть готовым к будущим предложениям по выкупу своих долгов.</p>
                 <p>Часто при поступлении предложения на выкуп клиент не имеет возможности набрать средства для внесения обеспечительного платежа. Данная тенденция усилилась на фоне экономического спада.
                 Для помощи нашим клиентам мы ввели сервис «Копилка».</p>
-                <a class="button red-button" href="#">Я новый клиент</a>
+                <a class="button red-button" href="#offersuccess">Я новый клиент</a>
             </div>
         </div>
 
@@ -132,7 +132,7 @@
     <div class="section moneybox">
             <div class="title"><h3>ЧТО ПОЛУЧАЕТ КЛИЕНТ?</h3></div>
             <div class="about">
-                <div><img width="400" src="img/handwithcalc.svg" alt="Копилка"></div>
+                <div><img width="300" src="img/handwithcalc.svg" alt="Копилка"></div>
                 <div class="about-desc">
                     <ul type="square">
                         <li>Бонусные рубли начисляются в течение 30 дней, до тех пор, пока все кредитные обязательства не будут погашены.</li>
@@ -146,7 +146,7 @@
 
     <div class="section absolute-center">
         <a class="button red-button fullwidth" href="signin.html">Личный Кабинет</a>
-        <a class="button red-button fullwidth" href="#">Я новый Клиент</a>
+        <a class="button red-button fullwidth" href="#offersuccess">Я новый Клиент</a>
     </div>
 
 </div>
@@ -218,7 +218,76 @@
     </div>
 
 
+<!------Модальное окно с успешным запросом------->
+<div class="popup" id="offersuccess">
+    <a href="##" class="popup-area"></a>
+    <div class="popup-body">
+        
+        <div class="popup-content">
+            	
+            <!--<a href="##" class="popup-close">Закрыть X</a>-->
+            <h3>Стать Клиентом!</h3>
+            <div class="offerblock">
+                <div class="offer-position">
+                    <p>Оставьте Ваши контактные данные в форме ниже и мы свяжемся с Вами в течении 24-х часов.</p><br>
+                    <form action="#" name="offersuccess" method="POST" class="leadform">
+                        <div class="fullbox">
 
+                            <label for="firstname">Ваше Имя</label>
+                            <input class="field" type="text" id="firstname" pattern="^[А-Яа-яЁё\s]+$" minlength="3" required>
+                       
+                        </div>
+                            
+                        <div  class="fullbox">
+                            <label for="phone">Номер Телефона</label>
+                            <input width="100%" id="phone" class="field" type="tel" required tabindex="1" name="phonenumber" maxlength="12" autofocus placeholder="+7(9**)***-**_**">
+                        </div>
+                        <div class="absolute-center">
+                            <button class="button red-button" type="submit" value="Отправить запрос">Отправить запрос</button></div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+
+            
+
+
+        </div>
+    </div>
+</div>
+<!----------Конец модального окна с успешным запросом------------->
+
+
+
+<!---------Модальное окно с отправкой заявки в CRM------------->
+<div class="popup" id="offersend">
+    <a href="##" class="popup-area"></a>
+    <div class="popup-body">
+        
+        <div class="popup-content">
+            <div class="popup-icon">
+                <img alt="Отправка заявки" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ4NS43NDMsODUuMzMzSDI2LjI1N0MxMS44MTUsODUuMzMzLDAsOTcuMTQ4LDAsMTExLjU4OVY0MDAuNDFjMCwxNC40NCwxMS44MTUsMjYuMjU3LDI2LjI1NywyNi4yNTdoNDU5LjQ4NyAgICBjMTQuNDQsMCwyNi4yNTctMTEuODE1LDI2LjI1Ny0yNi4yNTdWMTExLjU4OUM1MTIsOTcuMTQ4LDUwMC4xODUsODUuMzMzLDQ4NS43NDMsODUuMzMzeiBNNDc1Ljg5LDEwNS4wMjRMMjcxLjEwNCwyNTguNjI2ICAgIGMtMy42ODIsMi44MDItOS4zMzQsNC41NTUtMTUuMTA1LDQuNTI5Yy01Ljc3LDAuMDI2LTExLjQyMS0xLjcyNy0xNS4xMDQtNC41MjlMMzYuMTA5LDEwNS4wMjRINDc1Ljg5eiBNMzY2LjUsMjY4Ljc2MSAgICBsMTExLjU5LDEzNy44NDdjMC4xMTIsMC4xMzgsMC4yNDksMC4yNDMsMC4zNjgsMC4zNjhIMzMuNTQyYzAuMTE4LTAuMTMxLDAuMjU2LTAuMjMsMC4zNjgtMC4zNjhMMTQ1LjUsMjY4Ljc2MSAgICBjMy40MTktNC4yMjcsMi43NzEtMTAuNDI0LTEuNDY0LTEzLjg1MWMtNC4yMjctMy40MTktMTAuNDI0LTIuNzcxLTEzLjg0NCwxLjQ1N2wtMTEwLjUsMTM2LjUwMVYxMTcuMzMybDIwOS4zOTQsMTU3LjA0NiAgICBjNy44NzEsNS44NjIsMTcuNDQ3LDguNDQyLDI2LjkxMiw4LjQ2OGM5LjQ1Mi0wLjAyLDE5LjAzNi0yLjYsMjYuOTEyLTguNDY4bDIwOS4zOTQtMTU3LjA0NnYyNzUuNTM0TDM4MS44MDcsMjU2LjM2NyAgICBjLTMuNDItNC4yMjctOS42MjMtNC44NzctMTMuODQ0LTEuNDU3QzM2My43MjksMjU4LjMyOSwzNjMuMDc5LDI2NC41MzQsMzY2LjUsMjY4Ljc2MXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" />
+            </div>	
+            <!--<a href="##" class="popup-close">Закрыть X</a>-->
+            <h3>Выполнено!</h3>
+            <div class="offerblock">
+                <div class="offer-position">
+                    <div class="offer">
+                        <p>В ближайшее время с Вами свяжется персональный менеджер компании с номера <a href="tel://88005502014" title="Бесплатный звонок">8 (800) 550 2014</a>. Пожалуйста оставайтесь на связи. </p>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="inline absolute-center">
+            <a class="button red-button" href="##">Закрыть</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Конец модальное окно с отправкой заявки в CRM------------->
 
 <!--Модальное окно с правилами онлайн-оплат-->
 <div class="popup" id="onlinePaymentsRules">
