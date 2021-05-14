@@ -687,7 +687,7 @@ footer {
 
 
 .about-desc>ul>li::before {
-    color: red;
+    color: #C7141A;
     content: "▪";
     padding-right: 30px;
     font-size: 50px;
